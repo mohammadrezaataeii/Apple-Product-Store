@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+@theme {
+  --sidebar: #f8f8f8;
+}
+
+.bg-sidebar {
+  background-color: var(--sidebar);
+}
