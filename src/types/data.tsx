@@ -27,6 +27,7 @@ export interface navItemsType {
   icon: ComponentType<BoxIconProps>;
   activeIcon: ComponentType<BoxIconProps>;
   inactiveIcon: ComponentType<BoxIconProps>;
+  path: string;
 }
 
 export interface socialType {

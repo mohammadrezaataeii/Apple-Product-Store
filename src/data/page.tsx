@@ -19,30 +19,35 @@ export const navItems: navItemsType[] = [
     icon: HomeAlt,
     activeIcon: FolderOpen,
     inactiveIcon: Folder,
+    path: "/home",
   },
   {
     label: "iPhone",
     icon: MobileAlt,
     activeIcon: FolderOpen,
     inactiveIcon: Folder,
+    path: "/iphone",
   },
   {
     label: "MacBook",
     icon: Laptop,
     activeIcon: FolderOpen,
     inactiveIcon: Folder,
+    path: "/macbook",
   },
   {
     label: "Watch",
     icon: WristWatchAlt,
     activeIcon: FolderOpen,
     inactiveIcon: Folder,
+    path: "/watch",
   },
   {
     label: "iMac",
     icon: Desktop,
     activeIcon: FolderOpen,
     inactiveIcon: Folder,
+    path: "/imac",
   },
 ];
 
