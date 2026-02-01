@@ -2,7 +2,9 @@ import { useState } from "react";
 import Controls from "./features/app/components/Controls";
 import Navbar from "./features/app/components/Navbar";
 import AppContainer from "./features/app/components/AppContainer";
-import Home from "./features/Home/page";
+import Home from "./features/home/page";
+import Iphones from "./features/iphones/page";
+import MacBooks from "./features/macbook/page";
 
 export default function App() {
   const [frameZoom, setFrameZoom] = useState<boolean>(false);
@@ -20,7 +22,9 @@ export default function App() {
     <AppContainer frameZoom={frameZoom}>
       <Navbar activePage={activePage} handleNavClick={handleNavClick} />
       <Controls toggleZoom={toggleZoom} frameZoom={frameZoom} />
-      <Home handleNavClick={handleNavClick} />
+      {/* <Home handleNavClick={handleNavClick} /> */}
+      {/* <Iphones /> */}
+      <MacBooks />
     </AppContainer>
   );
 }
