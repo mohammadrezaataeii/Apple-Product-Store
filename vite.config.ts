@@ -17,4 +17,5 @@ export default defineConfig({
       "@": "/src",
     },
   },
+  base: "/apple-store",
 });
