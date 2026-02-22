@@ -10,7 +10,7 @@ function Watches() {
         {watchModels.map((watch, index) => (
           <div
             key={index}
-            className="w-60 h-[430px] flex flex-col justify-around group"
+            className={`w-60 h-[430px] flex flex-col justify-around group ${index == 2 ? "hidden md:flex" : ""}`}
           >
             <div className="w-full h-64 mb-4 overflow-hidden relative">
               <img
