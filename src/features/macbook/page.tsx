@@ -39,7 +39,7 @@ function MacBooks() {
       <div className="flex flex-col 2xl:p-4 md:items-start items-center">
         <div className="w-80 h-64 2xl:mb-0 mb-8">
           <img
-            className="2xl:w-72 xl:w-52 w-49 h-full 2xl:mt-0 sm:mt-6"
+            className="2xl:w-72 xl:w-52 w-49 h-full 2xl:mt-0 sm:-mt-6 object-contain m-auto"
             src={currentColor.img}
           />
           <span className="2xl:text-lg xl:text-sm font-medium text-gray-800 mb-2 text-center md:text-left">
