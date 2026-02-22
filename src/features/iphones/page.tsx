@@ -7,9 +7,12 @@ export default function Iphones() {
         Which iPhone is right for you?
       </h3>
       <div className="flex justify-between w-full">
-        {iphoneModels.map((iphone) => {
+        {iphoneModels.map((iphone, index) => {
           return (
-            <div className="flex flex-col justify-center items-center gap-y-2">
+            <div
+              className={`flex flex-col justify-center items-center gap-y-2 ${index == 2 ? "hidden md:flex" : ""}`}
+              key={index}
+            >
               <img
                 src={iphone.img}
                 alt={iphone.name}
