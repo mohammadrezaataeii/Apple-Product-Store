@@ -17,7 +17,7 @@ function Controls({
     <div className="absolute top-3 right-3 space-x-2 z-10">
       <button
         onClick={toggleZoom}
-        className="text-2xl text-pink-400 cursor-pointer lg:inline-block"
+        className="text-2xl text-pink-400 cursor-pointer lg:inline-block hidden"
       >
         {frameZoom ? (
           <SearchBigMinus pack="filled" size="base" />

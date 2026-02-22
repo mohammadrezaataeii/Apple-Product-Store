@@ -15,6 +15,7 @@ export default function App() {
   const [isLgScreen, setIsLgScreen] = useState<boolean>(
     window.innerWidth > 1024,
   );
+  const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -36,7 +37,7 @@ export default function App() {
     }
   };
 
-  const handleNavClick = (index: number) => {
+  const handleItemClick = (index: number) => {
     setActivePage(index);
   };
 
@@ -44,9 +45,18 @@ export default function App() {
     setActivePage(0);
   };
 
+  const handleToggleNavbar = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
+
   return (
     <AppContainer frameZoom={frameZoom}>
-      <Navbar activePage={activePage} handleNavClick={handleNavClick} />
+      <Navbar
+        activePage={activePage}
+        handleItemClick={handleItemClick}
+        isNavbarOpen={isNavbarOpen}
+        handleToggleNavbar={handleToggleNavbar}
+      />
       <Controls
         toggleZoom={toggleZoom}
         resetPage={resetPage}
@@ -54,7 +64,7 @@ export default function App() {
         activePage={activePage}
       />
       <PageTransition activePage={activePage}>
-        <Home handleNavClick={handleNavClick} />
+        <Home handleNavClick={handleItemClick} />
         <Iphones />
         <MacBooks />
         <Watches />
